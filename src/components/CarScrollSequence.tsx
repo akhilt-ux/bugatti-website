@@ -9,7 +9,7 @@ interface CarScrollSequenceProps {
   folderPath: string;
 }
 
-export default function CarScrollSequence() {
+export default function CarScrollSequence({ folderPath }: CarScrollSequenceProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
